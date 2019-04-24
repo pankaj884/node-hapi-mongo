@@ -1,0 +1,17 @@
+const Service = require('../../Services');
+const Models = require('../../Models');
+const ControllerModule = require('../../Controllers/ControllerModule').ControllerModule;
+const UniversalFunctions = require('../../Utils/UniversalFunctions');
+const controllerHelper = require('../../Controllers/commonControllerFunctions');
+const Config = require('../../constant');
+
+function {{CONTROLLER_NAME}}(service) {
+   ControllerModule.call(this, service);
+}
+
+{{CONTROLLER_NAME}}.prototype = Object.create(ControllerModule.prototype)
+
+
+module.exports = {
+   '{{MODEL_NAME}}': new {{CONTROLLER_NAME}}(Service.makeModule.{{MODEL_NAME}})
+};;

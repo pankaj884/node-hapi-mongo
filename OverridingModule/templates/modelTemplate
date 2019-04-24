@@ -1,0 +1,11 @@
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
+const constant = require('../../constant');
+
+const {{MODEL_NAME_CAP}} = new Schema({
+
+},{
+    timestamps : true
+});
+
+module.exports = mongoose.model('{{MODEL_NAME_CAP}}', {{MODEL_NAME_CAP}});
